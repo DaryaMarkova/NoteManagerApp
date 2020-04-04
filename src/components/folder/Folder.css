@@ -1,0 +1,14 @@
+span  input {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  width: 110px;
+  font-size: 14px;
+  border-bottom: 1px solid #3F51B5;
+}
+
+li .selected {
+  font-weight: bold;
+  font-style: italic;
+}
+

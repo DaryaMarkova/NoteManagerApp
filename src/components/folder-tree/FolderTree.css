@@ -1,0 +1,80 @@
+.tree-view li {
+  position: relative;
+  list-style: none;
+  padding: px 3px;
+  padding-bottom: 0px;
+}
+
+.tree-view  li {
+  border-left: 1px dashed #ccccff;
+}
+
+.tree-view > button {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.tree-view > ul {
+  margin-top: 0px;
+}
+
+.tree-view  li > button:first-of-type {
+  margin-left: 10px;
+}
+
+.tree-view  li > button {
+  border: 1px dotted silver;
+  font-size: 10px;
+  margin-right: 3px;
+  border: none;
+}
+
+.tree-view li .nested::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  width: 42px;
+  height: 1px;
+  left: -1px;
+  z-index: 0;
+  border-bottom: 1px dashed #ccccff;
+}
+
+.tree-view li > span {
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.tree-view li > span button {
+ font-size: 12px;
+}
+
+.tree-view li > span button:first-of-type {
+  margin-left: 10px;
+}
+
+.tree-view li > .folder-btn {
+  position: absolute;
+  left: -24px;
+  z-index: 10;
+}
+
+.tree-view li > span::before {
+  content: '*';
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 14px;
+  left: -8px;
+  top: 8px;
+  z-index: 8;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+.tree-view  .closed > ul {
+  display: none;
+}

@@ -1,0 +1,7 @@
+.folder-viewer {
+  width: 100%;
+  min-height: 400px;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

@@ -1,0 +1,57 @@
+
+body {
+  background-color: rgb(245,245,245);
+  color: #4d4d4d;
+}
+
+.app {
+  max-width: 1280px;
+  height: 720px;
+  margin: 100px auto;
+}
+
+.app .row {
+  width: 100%;
+  min-height: 50px;
+}
+
+.app a {
+  text-decoration: none;
+  color: #424242;
+}
+
+.row:first-child {
+  text-align: right;
+}
+
+.row:nth-of-type(2) {
+  display: flex;
+}
+
+.column:nth-of-type(1) {
+  width: 400px;
+  height: auto;
+}
+.column:nth-of-type(2) {
+  position: relative;
+  width: calc(100% - 350px);
+  height: auto;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+  .row .column {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+  .notes-viewer {
+    width: 100%;
+  }
+}
+
+.mat-ripple-element {
+  display: none;
+}

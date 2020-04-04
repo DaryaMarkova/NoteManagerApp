@@ -1,0 +1,18 @@
+
+.control-bar {
+  width: 50px;
+  min-height: 50px;
+  height: auto;
+  overflow: hidden;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: 1px solid lavender;
+}
+
+
+@media screen and (max-width: 800px) {
+  .control-bar {
+    width: 100%;
+  }
+}

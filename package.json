@@ -1,0 +1,68 @@
+{
+  "name": "note-manager",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.3.2",
+    "@material-ui/icons": "^4.2.1",
+    "@types/classnames": "^2.2.9",
+    "@types/lodash.clonedeep": "^4.5.6",
+    "@types/node": "12.0.12",
+    "@types/react": "16.8.23",
+    "@types/react-autocomplete": "^1.8.5",
+    "@types/react-beautiful-dnd": "^11.0.3",
+    "@types/react-dom": "16.8.4",
+    "@types/react-redux": "^7.1.2",
+    "@types/redux-logger": "^3.0.7",
+    "@types/redux-thunk": "^2.1.0",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/jest": "24.0.15",
+    "classnames": "^2.2.6",
+    "immer": "^3.2.0",
+    "lodash.clonedeep": "^4.5.0",
+    "material-ui-popup-state": "^1.4.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-autocomplete": "^1.8.1",
+    "react-beautiful-dnd": "^11.0.5",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "redux-actions": "^2.6.5",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "rxjs": "^6.5.2",
+    "typescript": "3.5.2"
+  },
+  "scripts": {
+    "start": "npm-run-all -p start-server start-client",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start-client": "cross-env PORT=3007 react-scripts start",
+    "start-server": "node server/server.js",
+    "preinstall": "npm install server"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "npm-run-all": "^4.1.5",
+    "react-course-backend": "file:server"
+  }
+}

@@ -1,0 +1,77 @@
+.autocomplete-tag-selector {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.autocomplete {
+  display: flex;
+  width: 200px;
+  position: relative !important;
+}
+
+.autocomplete > div {
+  position: relative !important;
+}
+
+.autocomplete > div > div {
+  position: absolute !important;
+  left: 0px !important;
+  top: 25px !important;
+  height: auto !important;
+  max-height: 300px !important;
+}
+.autocomplete div {
+  z-index: 20;
+}
+
+.autocomplete-item {
+  padding: 10px;
+  background: rgba(255,255,255,1);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hovered {
+  background-color: #f5f5f5;
+}
+
+.autocomplete-item:hover {
+  background-color: #f5f5f5;
+}
+
+.autocomplete  input {
+  border:none;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 300;
+  outline: none;
+  padding: 10px 0px 5px;
+  font-weight: lighter;
+  border-bottom: 1px solid grey;
+}
+
+.autocomplete button {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.autocomplete  input:focus {
+  border-bottom: 2px solid #3f51b5;
+}
+
+.choosen-tags {
+  max-width: 450px;
+  margin-top: 10px;
+}
+
+.choosen-tags .tag-item {
+  height: 25px;
+  min-width: 70px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+.choosen-tags .tag-item  > svg {
+  width: 18px;
+  height: 18px;
+}
